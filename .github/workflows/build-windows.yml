@@ -33,10 +33,10 @@ jobs:
 
           PLATFORM=$(rustc --print host-tuple)
           mkdir -p ../tauri/src-tauri/binaries
-          cp dist/voicebox-server.exe ../tauri/src-tauri/binaries/voicebox-server-${PLATFORM}.exe
-          cp dist/voicebox-mcp.exe ../tauri/src-tauri/binaries/voicebox-mcp-${PLATFORM}.exe
-          echo "Built voicebox-server-${PLATFORM}.exe"
-          echo "Built voicebox-mcp-${PLATFORM}.exe"
+          cp dist/vox-server.exe ../tauri/src-tauri/binaries/vox-server-${PLATFORM}.exe
+          cp dist/vox-mcp.exe ../tauri/src-tauri/binaries/vox-mcp-${PLATFORM}.exe
+          echo "Built vox-server-${PLATFORM}.exe"
+          echo "Built vox-mcp-${PLATFORM}.exe"
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
@@ -58,7 +58,7 @@ jobs:
         with:
           projectPath: tauri
           tagName: v__VERSION__
-          releaseName: "voicebox v__VERSION__ (test build)"
+          releaseName: "vox v__VERSION__ (test build)"
           releaseBody: "Test build for audio export fix"
           releaseDraft: true
           prerelease: true

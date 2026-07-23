@@ -67,7 +67,7 @@ export function AboutPage() {
             <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
               <span>{t('settings.about.createdBy')}</span>
               <a
-                href="https://github.com/jamiepine"
+                href="https://github.com/Clawbotsai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent hover:underline"
@@ -80,7 +80,7 @@ export function AboutPage() {
           <FadeIn delay={320}>
             <div className="flex flex-wrap justify-center gap-3 pt-2">
               <a
-                href="https://buymeacoffee.com/jamiepine"
+                href="https://clawbots.xyz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 rounded-lg border border-border/60 px-4 py-2 text-sm transition-colors hover:bg-muted/50"

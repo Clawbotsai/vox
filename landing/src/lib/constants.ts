@@ -4,9 +4,9 @@ export const LATEST_VERSION = 'v0.1.0';
 
 export const GITHUB_REPO = 'https://github.com/Clawbotsai/vox';
 export const GITHUB_RELEASES_PAGE = `${GITHUB_REPO}/releases`;
-export const DONATE_URL = 'https://buymeacoffee.com/jamiepine';
+export const DONATE_URL = 'https://clawbots.xyz';
 export const SPONSOR_CHECKOUT_URL = 'https://buy.stripe.com/eVqdRad3n16ubcqf201Jm00';
-export const SPONSOR_CONTACT_EMAIL = 'jamie@spacedrive.com';
+export const SPONSOR_CONTACT_EMAIL = 'team@clawbots.io';
 
 // $VOX — the official community token on Solana
 export const TOKEN_TICKER = '$VOX';
@@ -139,7 +139,7 @@ export const TOKEN_PROOFS: TokenProof[] = [
     label: 'Launch liquidity lock',
     detail:
       'Liquidity and a portion of dev holdings were locked at launch (~6.6% top holder), so the supply can be verified on-chain from day one.',
-    txUrl: '', // TODO(jamie): add the Solscan/locker link for the launch lock
+    txUrl: '', // TODO: add the Solscan/locker link for the launch lock
   },
   {
     kind: 'burn',
@@ -154,7 +154,7 @@ export const TOKEN_PROOFS: TokenProof[] = [
     label: 'Buyback & burn',
     detail:
       'A second buyback and burn — part of an ongoing commitment to keep buying back and reducing supply over time.',
-    txUrl: '', // TODO(jamie): add the Solscan link for the second burn
+    txUrl: '', // TODO: add the Solscan link for the second burn
   },
 ];
 
