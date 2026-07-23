@@ -1,15 +1,15 @@
-// Download links for voicebox releases
+// Download links for vox releases
 // These are fallback values - link to releases page if API fails
 export const LATEST_VERSION = 'v0.1.0';
 
-export const GITHUB_REPO = 'https://github.com/jamiepine/voicebox';
+export const GITHUB_REPO = 'https://github.com/Clawbotsai/vox';
 export const GITHUB_RELEASES_PAGE = `${GITHUB_REPO}/releases`;
 export const DONATE_URL = 'https://buymeacoffee.com/jamiepine';
 export const SPONSOR_CHECKOUT_URL = 'https://buy.stripe.com/eVqdRad3n16ubcqf201Jm00';
 export const SPONSOR_CONTACT_EMAIL = 'jamie@spacedrive.com';
 
-// $VOICEBOX — the official community token on Solana
-export const TOKEN_TICKER = '$VOICEBOX';
+// $VOX — the official community token on Solana
+export const TOKEN_TICKER = '$VOX';
 export const TOKEN_CONTRACT_ADDRESS = 'FpzZHtp5tbvz6xndEtoJHoGEWcT7cFEuscdCh9RApump';
 export const TOKEN_PUMP_URL = `https://pump.fun/coin/${TOKEN_CONTRACT_ADDRESS}`;
 // Solscan token page — lets anyone inspect supply, holders, and history.
@@ -45,13 +45,13 @@ export const TOKEN_DEV_WALLETS: string[] = envList('TOKEN_DEV_WALLETS', [
 ]);
 
 /**
- * Locked supply: token accounts whose $VOICEBOX is locked (liquidity lockers,
+ * Locked supply: token accounts whose $VOX is locked (liquidity lockers,
  * vesting escrows). Each entry is summed into "locked"; unlocksAt is optional
  * copy for the card. Override with TOKEN_LOCKED_ACCOUNTS as a JSON array.
  */
 export interface LockedAccount {
   label: string;
-  /** The token account or owner address holding the locked $VOICEBOX. */
+  /** The token account or owner address holding the locked $VOX. */
   account: string;
   /** Human-readable unlock date, e.g. "Unlocks Jun 2027" (optional). */
   unlocksAt?: string;
@@ -145,7 +145,7 @@ export const TOKEN_PROOFS: TokenProof[] = [
     kind: 'burn',
     label: 'Buyback & burn',
     detail:
-      'Bought $VOICEBOX back from the open market and burned it to a dead address, permanently removing it from supply.',
+      'Bought $VOX back from the open market and burned it to a dead address, permanently removing it from supply.',
     txUrl:
       'https://solscan.io/tx/5MjK4CYMBKAewLcjdD6QkM8ctkeG2bjyQhpjNgEumkDbDtoKCVmzKcWwLWsd4QJov8hs5zbGLt3g5vVCp4CBmze5',
   },
